@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Visiedo | VipeDev ARCHITECT.2026</title>
+    <title>Gabriel Visiedo | Mobile &amp; Web Developer (Kotlin, Python, Reflex)</title>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="Gabriel Visiedo | VipeDev – Mobile App Developer with Kotlin & Web Developer with Reflex Python. Portafolio de aplicaciones Android, dashboards web y sistemas integrales.">
+    <link rel="canonical" href="https://gaby79dev.github.io/">
+    <link rel="alternate" hreflang="es" href="https://gaby79dev.github.io/">
+    <link rel="alternate" hreflang="en" href="https://gaby79dev.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://gaby79dev.github.io/">
     <meta property="og:title" content="Gabriel Visiedo | VipeDev">
     <meta property="og:description" content="Mobile App Developer with Kotlin & Web Developer with Reflex Python. Building high-performance native experiences and modern web applications.">
     <meta property="og:image" content="https://gaby79dev.github.io/images/icon.webp">
@@ -14,6 +18,42 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gabriel Visiedo | VipeDev">
     <meta name="twitter:description" content="Mobile App Developer with Kotlin & Web Developer with Reflex Python.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gabriel Visiedo",
+        "alternateName": "VipeDev",
+        "url": "https://gaby79dev.github.io",
+        "image": "https://gaby79dev.github.io/images/icon.webp",
+        "sameAs": [
+            "https://github.com/Gaby79dev",
+            "https://www.linkedin.com/in/gabriel-visiedo-pel%C3%A1ez-993675303/"
+        ],
+        "knowsAbout": ["Kotlin", "Python", "Android Development", "Reflex", "Supabase", "Web Development"],
+        "description": "Mobile App Developer with Kotlin & Web Developer with Reflex Python",
+        "worksOn": [
+            {
+                "@type": "WebApplication",
+                "name": "Hotel Mena Plaza",
+                "description": "Sistema integral de gestión hotelera con dashboard web y apps móviles",
+                "url": "https://www.hotelmenaplaza.es/"
+            },
+            {
+                "@type": "MobileApplication",
+                "name": "Mena Garden",
+                "description": "App para GastroBar en Nerja",
+                "url": "https://play.google.com/store/apps/details?id=com.garden.menagarden&hl=es"
+            },
+            {
+                "@type": "MobileApplication",
+                "name": "Nerja Guide Experience",
+                "description": "Guía turística de Nerja",
+                "url": "https://play.google.com/store/apps/details?id=com.nerjaexperienceguide.nerjaexperienceguide&hl=es_PA"
+            }
+        ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -33,6 +73,7 @@
             </button>
             <div class="nav-links" id="navLinks">
                 <a href="#about" class="nav-link" data-nav data-i18n="nav-about">Sobre mí</a>
+                <a href="#journey" class="nav-link" data-nav data-i18n="nav-journey">Trayectoria</a>
                 <a href="#projects" class="nav-link" data-nav data-i18n="nav-projects">Web</a>
                 <a href="#apps" class="nav-link" data-nav data-i18n="nav-apps">Apps</a>
                 <a href="#work" class="nav-link" data-nav data-i18n="nav-stack">Stack</a>
@@ -60,8 +101,29 @@
             </p>
         </section>
 
+        <section class="metrics" data-reveal>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-number" data-target="6">0</span>
+                    <span class="metric-label" data-i18n="metric-years">Años programando</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number" data-target="5">0</span>
+                    <span class="metric-label" data-i18n="metric-apps">Apps Android</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number" data-target="8">0</span>
+                    <span class="metric-label" data-i18n="metric-projects">Proyectos</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number" data-target="3">0</span>
+                    <span class="metric-label" data-i18n="metric-courses">Plataformas de cursos</span>
+                </div>
+            </div>
+        </section>
+
         <section class="about" id="about">
-            <div class="about-content">
+            <div class="about-content" data-reveal>
                 <div class="about-avatar">
                     <img src="images/icon.webp" alt="Gabriel Visiedo" class="about-photo" loading="lazy">
                 </div>
@@ -98,15 +160,57 @@
                             Git & GitHub
                         </span>
                     </div>
-                    <a href="#" class="btn-primary about-cv" data-i18n="about-cv" onclick="alert('Añade aquí tu CV en PDF'); return false;">Descargar CV</a>
+                    <a href="https://github.com/Gaby79dev" target="_blank" rel="noopener noreferrer" class="btn-primary about-cv" data-i18n="about-cv">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span data-i18n="about-cv">Ver GitHub</span>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <section class="journey" id="journey">
+            <h2 class="section-title" data-i18n="journey-title" data-reveal>Mi Trayectoria</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h3 data-i18n="journey-1-title">El inicio de todo</h3>
+                        <div class="timeline-body"><p data-i18n="journey-1-desc">Durante la pandemia, aprovechando el confinamiento, comencé a estudiar programación de forma autodidacta. Mi curiosidad por la tecnología me llevó a sumergirme en Python, Kotlin y el desarrollo de software.</p></div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021–2023</span>
+                        <h3 data-i18n="journey-2-title">Kotlin & primeras apps</h3>
+                        <div class="timeline-body"><p data-i18n="journey-2-desc">Me especialicé con cursos de Kotlin en Udemy y Coursera, desarrollando varias aplicaciones Android. Publiqué mis primeras apps en Google Play (Mena Garden, Nerja Guide Experience) y comencé a explorar el ecosistema móvil.</p></div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023–2024</span>
+                        <h3 data-i18n="journey-3-title">Expansión a Python</h3>
+                        <div class="timeline-body"><p data-i18n="journey-3-desc">A través de Fundae, realicé cursos de automatizaciones con Python, programación web con Python e inteligencia artificial. También desarrollé sitios web con Reflex para clientes como Vistamar Apartments.</p></div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Actualidad</span>
+                        <h3 data-i18n="journey-4-title">Proyecto destacado</h3>
+                        <div class="timeline-body"><p data-i18n="journey-4-desc">Sistema integral de gestión hotelera (Hotel Mena Plaza): dashboard web con Reflex, apps Android con Kotlin y base de datos en tiempo real con Supabase. Mi proyecto más ambicioso, donde aplico todo lo aprendido.</p></div>
+                    </div>
+                </div>
+            </div>
+            <button class="timeline-toggle" data-i18n="journey-toggle" aria-expanded="false">Ver trayectoria completa</button>
+        </section>
+
         <section class="projects" id="projects">
-            <h2 class="section-title" data-i18n="projects-featured">Proyecto Destacado</h2>
+            <h2 class="section-title" data-i18n="projects-featured" data-reveal>Proyecto Destacado</h2>
             
-            <article class="featured-project">
+            <article class="featured-project" data-reveal>
                 <div class="browser-mockup-container">
                     <div class="browser-mockup">
                         <div class="browser-header">
@@ -114,7 +218,7 @@
                             <span class="browser-dot yellow"></span>
                             <span class="browser-dot green"></span>
                         </div>
-                        <img src="images/web_hotel_1.png" alt="Hotel Mena Plaza" class="featured-screenshot" loading="lazy">
+                        <img src="images/web_hotel_1.png" alt="Captura del dashboard de gestión hotelera Hotel Mena Plaza" class="featured-screenshot" loading="lazy">
                     </div>
                 </div>
                 <div class="featured-info">
@@ -144,11 +248,11 @@
                 </div>
             </article>
 
-            <h2 class="section-title" data-i18n="projects-other">Otros Proyectos</h2>
+            <h2 class="section-title" data-i18n="projects-other" data-reveal>Otros Proyectos</h2>
             
-            <div class="projects-grid">
+            <div class="projects-grid" data-reveal>
                 <article class="project-card">
-                    <img src="images/web_hotel_1.png" alt="Hotel Mena Plaza" class="project-screenshot" loading="lazy" onerror="this.style.display='none'">
+                    <img src="images/web_hotel_1.png" alt="Hotel Mena Plaza - Sistema integral de gestión hotelera web" class="project-screenshot" loading="lazy" onerror="this.style.display='none'">
                     <div class="project-overlay">
                         <h3 data-i18n="project-hotel-title">Hotel Mena Plaza</h3>
                         <p data-i18n="project-hotel-desc">Gestión hotelera con reservas, habitaciones y multiidioma</p>
@@ -189,9 +293,9 @@
         </section>
 
         <section class="apps" id="apps">
-            <h2 class="section-title" data-i18n="apps-title">Apps Android</h2>
+            <h2 class="section-title" data-i18n="apps-title" data-reveal>Apps Android</h2>
             
-            <div class="projects-grid">
+            <div class="projects-grid" data-reveal>
                 <article class="app-card">
                     <div class="app-card-bg gradient-1"></div>
                     <div class="phone-mockup">
@@ -273,7 +377,7 @@
         </section>
 
         <section class="bento-grid" id="work">
-            <article class="bento-card featured">
+            <article class="bento-card featured" data-reveal>
                 <div class="card-header">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
@@ -286,7 +390,7 @@
                 </div>
             </article>
 
-            <article class="bento-card featured">
+            <article class="bento-card featured" data-reveal>
                 <div class="card-header">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-9 5 18 2-9h5"></path></svg>
@@ -299,7 +403,7 @@
                 </div>
             </article>
 
-            <article class="bento-card">
+            <article class="bento-card" data-reveal>
                 <div class="card-header">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
@@ -312,7 +416,7 @@
                 </div>
             </article>
 
-            <article class="bento-card">
+            <article class="bento-card" data-reveal>
                 <div class="card-header">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -338,6 +442,10 @@
             </a>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 
     <script src="translations.js"></script>
     <script>
@@ -374,6 +482,12 @@
                     }
                 }
             });
+            const toggleBtn = document.querySelector('.timeline-toggle');
+            const journey = document.querySelector('.journey');
+            if (toggleBtn && journey) {
+                const toggleKey = journey.classList.contains('expanded') ? 'journey-toggle-hide' : 'journey-toggle';
+                if (t[toggleKey]) toggleBtn.textContent = t[toggleKey];
+            }
             localStorage.setItem('lang', lang);
         }
 
@@ -386,6 +500,85 @@
             const saved = localStorage.getItem('lang') || (navigator.language.startsWith('en') ? 'en' : 'es');
             setLanguage(saved);
         })();
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+        // Counter animation
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target);
+            if (!target) return;
+            const duration = 1200;
+            const start = performance.now();
+            function update(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                el.textContent = Math.floor(progress * target);
+                if (progress < 1) requestAnimationFrame(update);
+                else el.textContent = target;
+            }
+            requestAnimationFrame(update);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.metric-number').forEach(counter => {
+                        if (!counter.dataset.animated) {
+                            counter.dataset.animated = 'true';
+                            animateCounter(counter);
+                        }
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const metricsSection = document.querySelector('.metrics');
+        if (metricsSection) counterObserver.observe(metricsSection);
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Click en cards
+        document.addEventListener('click', (e) => {
+            const card = e.target.closest('.project-card, .app-card');
+            if (!card) return;
+            if (e.target.closest('a')) return;
+            const link = card.querySelector('.project-link');
+            if (link && link.href) window.open(link.href, '_blank');
+        });
+
+        // Timeline toggle
+        const timelineToggle = document.querySelector('.timeline-toggle');
+        const journey = document.querySelector('.journey');
+        timelineToggle.addEventListener('click', () => {
+            const expanded = journey.classList.toggle('expanded');
+            timelineToggle.setAttribute('aria-expanded', expanded);
+            const key = expanded ? 'journey-toggle-hide' : 'journey-toggle';
+            const lang = document.documentElement.lang;
+            timelineToggle.textContent = translations[lang][key];
+        });
     </script>
 </body>
 </html>
